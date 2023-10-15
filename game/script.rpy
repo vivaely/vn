@@ -10,3 +10,4 @@ define B = Character('Лысый',color="#c8ffc8")#Brad McGuire
 
 label start:
     b "здарова, пупсек"
+    v "привет, Черкашенок"
