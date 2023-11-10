@@ -1,13 +1,22 @@
-﻿
-define b = Character('Борис Бритва', color="#12e912") #Billy Harington(босс качалочки)
-define i = Character('Иван Дулин',color="#c8ffc8") #Иван Дулин(деректор предприятия)
-define v = Character('Иван Семенов',color="#c8ffc8") #Van Darkholme
-define m = Character('Максим Валына',color="#c8ffc8") #Mark Woolf(коллега по цеху) 
-define D = Character('Данила Литейщик',color="#c8ffc8") #Danny Lee
-define d = Character('Дмитрий Фрик ',color="#c8ffc8") #Daniel Freeman
-define s = Character('Рэмбо',color="#c8ffc8")#Steave Rambo 
-define B = Character('Лысый',color="#c8ffc8")#Brad McGuire 
+﻿# Вы можете расположить сценарий своей игры в этом файле.
 
+# Определение персонажей игры.
+define e = Character('Эйлин', color="#c8ffc8")
+
+# Вместо использования оператора image можете просто
+# складывать все ваши файлы изображений в папку images.
+# Например, сцену bg room можно вызвать файлом "bg room.png",
+# а eileen happy — "eileen happy.webp", и тогда они появятся в игре.
+
+# Игра начинается здесь:
 label start:
-    b "здарова, пупсек"
-    v "привет, Черкашенок"
+
+    scene bg room
+
+    show eileen happy
+
+    e "Вы создали новую игру Ren'Py."
+
+    e "Добавьте сюжет, изображения и музыку и отправьте её в мир!"
+
+    return
